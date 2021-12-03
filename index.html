@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inventory Keeper</title>
+</head>
+<body>
+  <header>
+    <div class="general-info">
+      <p>Nome</p>
+      <p>Mael</p>
+    </div>
+    <div class="general-info">
+      <p>Raça</p>
+      <p>Humano</p>
+    </div>
+    <div class="general-info">
+      <p>Tendência</p>
+      <p>Caótico/Bom</p>
+    </div>
+    <div class="general-info">
+      <p>Pontos de Experiência</p>
+      <input type="range" min="0" max="100" value="75" disabled="true">
+    </div>
+  </header>
+  <hr/>
+  <main>
+    <section class="attributes-section">
+      <h3>Atributos</h3>
+      <button>Editar Atributos</button>
+
+      <div class="attribute-container">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.thenounproject.com%2Fpng%2F1018187-200.png&f=1&nofb=1" />
+        <p>Força: 2</p>
+      </div>
+
+      <div class="attribute-container">
+        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipartbest.com%2Fcliparts%2Fdc6%2FGjy%2Fdc6Gjyxc9.png&f=1&nofb=1"/>
+        <p>Destreza: 1</p>
+      </div>
+
+      <div class="attribute-container">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ficon-library.com%2Fimages%2Fshield-png-icon%2Fshield-png-icon-1.jpg&f=1&nofb=1"/>
+        <p>Constituição: 12</p>
+      </div>
+
+      <div class="attribute-container">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.freeiconspng.com%2Fuploads%2Fopen-book-icon-1.png&f=1&nofb=1"/>
+        <p>Inteligência: 13</p>
+      </div>
+
+      <div class="attribute-container">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fopenclipart.org%2Fimage%2F2400px%2Fsvg_to_png%2F221940%2Fscrollicon.png&f=1&nofb=1"/>
+        <p>Sabedoria: 13</p>
+      </div>
+
+      <div class="attribute-container">
+        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.clipartpanda.com%2Freal-heart-drawing-eTMdXakEc.png&f=1&nofb=1"/>
+        <p>Carisma: 15</p>
+      </div>
+
+    </section>
+
+    <section class="attributes-equipment-section">
+      <h3>Atributos Físicos</h3>
+      <button>Editar Atributos</button>
+
+      <div class="physical-attributes-container">
+        <p>Armadura: 18</p>
+      </div>
+
+      <div class="physical-attributes-container">
+        <p>Iniciativa: 6</p>
+      </div>
+
+      <div class="physical-attributes-container">
+        <p>Deslocamento: 18m</p>
+      </div>
+
+      <div class="physical-attributes-container">
+        <p>Pontos de Vida: 50</p>
+      </div>
+      <div class="physical-attributes-container">
+        <p>Pontos de Vida Máximos: 100</p>
+      </div>
+
+      <div class="magic-equipment-container">
+        <h3>Equipamentos Mágicos</h3>
+      </div>
+      <div class="physical-attributes-container">
+        <p>Espada Solar +2</p>
+      </div>
+      <div class="physical-attributes-container">
+        <p>Anel Amaldiçoado da Escuridão</p>
+      </div>
+    </section>
+
+    <section class="items-list-section">
+      <div class="">
+
+      </div>
+    </section>
+  </main>
+</body>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: auto;
+    width: 1500px;
+    padding: 10px 30px;
+    font-size: 18px;
+  }
+
+  header {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  img {
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 4px;
+  }
+  main {
+    display: flex;
+  }
+
+  .general-info {
+    margin-right: 35px;
+  }
+
+  .attribute-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .physical-attributes-container {
+    display: flex;
+  }
+
+  .magic-equipment-container{
+    margin-top: 50px;
+  }
+
+  .attributes-equipment-section{
+    padding: 0px 300px;
+  }
+</style>
+</html>
