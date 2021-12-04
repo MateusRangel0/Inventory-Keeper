@@ -7,20 +7,20 @@
 <body>
   <header>
     <div class="general-info">
-      <p>Nome</p>
+      <b>Nome</b>
       <p>Mael</p>
     </div>
     <div class="general-info">
-      <p>Raça</p>
+      <b>Raça</b>
       <p>Humano</p>
     </div>
     <div class="general-info">
-      <p>Tendência</p>
+      <b>Tendência</b>
       <p>Caótico/Bom</p>
     </div>
     <div class="general-info">
-      <p>Pontos de Experiência</p>
-      <input type="range" min="0" max="100" value="75" disabled="true">
+      <b>Pontos de Experiência</b>
+      <input type="range" value="75" disabled="true" style="margin-left: 15px;">
     </div>
   </header>
   <hr/>
@@ -66,39 +66,89 @@
       <button>Editar Atributos</button>
 
       <div class="physical-attributes-container">
-        <p>Armadura: 18</p>
+        <p><b>Armadura:</b> 18</p>
       </div>
 
       <div class="physical-attributes-container">
-        <p>Iniciativa: 6</p>
+        <p><b>Iniciativa:</b> 6</p>
       </div>
 
       <div class="physical-attributes-container">
-        <p>Deslocamento: 18m</p>
+        <p><b>Deslocamento:</b> 18m</p>
       </div>
 
       <div class="physical-attributes-container">
-        <p>Pontos de Vida: 50</p>
-      </div>
-      <div class="physical-attributes-container">
-        <p>Pontos de Vida Máximos: 100</p>
+        <p><b>Pontos de Vida Máximos:</b> 100</p>
       </div>
 
-      <div class="magic-equipment-container">
-        <h3>Equipamentos Mágicos</h3>
+      <div class="physical-attributes-container">
+        <p><b>Pontos de Vida Atuais:</b> 50</p>
+      </div>
+
+      <div class="equipment-container">
+        <h3>Equipamentos</h3>
+        <button>Equipar item</button>
       </div>
       <div class="physical-attributes-container">
         <p>Espada Solar +2</p>
       </div>
       <div class="physical-attributes-container">
-        <p>Anel Amaldiçoado da Escuridão</p>
+        <p>Cota de Malha</p>
+      </div>
+      <div class="physical-attributes-container">
+        <p>Calça de Pano</p>
+      </div>
+      <div class="physical-attributes-container">
+        <p>Botas da Velocidade</p>
       </div>
     </section>
 
     <section class="items-list-section">
-      <div class="">
-
+      <h3>Mochila</h3>
+      <button>Adicionar Item</button>
+      <div class="item-container">
+        <div class="item-info">
+          <p style="font-size: larger"> Poção pequena <b style="margin-right: 270px">3x</b></p>
+          <button class="item-button">+</button>
+          <button class="item-button">-</button>
+        </div>
+        <div class="item-description">
+          <p>Uma poção com um líquido denso avermelhado com gosto de alcohol. Recupera <b style="color:green">5 de HP</b> ao beber. Não recomendo tomar muito, talvez você passe mal.</p>
+          <br/>
+          <p>
+            <b>Tipo -</b> Consumível
+          </p>
+        </div>
       </div>
+      <div class="item-container" style="border: 3px solid rgb(250, 219, 118);">
+        <div class="item-info">
+          <p style="font-size: larger"> Estilhaço Ártico <b style="margin-right: 250px">1x</b></p>
+          <button class="item-button">+</button>
+          <button class="item-button">-</button>
+        </div>
+        <div class="item-description">
+          <p>Este estilhaço brilha com uma luz sobrenatural. Tome cuidado, Wyverns gélidos tendem a ser atraídos pela luz emanada da pedra.</p>
+          <br/>
+          <p>
+            <b>Tipo -</b> Item de Missão
+          </p>
+        </div>
+      </div>
+      <div class="item-container">
+        <div class="item-info">
+          <p style="font-size: larger">Fio da Penumbra <b style="margin-right: 250px">4x</b></p>
+          <button class="item-button">+</button>
+          <button class="item-button">-</button>
+        </div>
+        <div class="item-description">
+          <p>Fio fino, mas de força fora do comum. Vendido por comerciantes de toda Andraste.</p>
+          <br/>
+          <p>
+            <b>Tipo -</b> Material
+          </p>
+        </div>
+      </div>
+      
     </section>
   </main>
 </body>
@@ -138,18 +188,51 @@
   .attribute-container {
     display: flex;
     align-items: center;
+    margin-bottom: 12px;
+    width:400px;
+    margin-right: 100px;
+
   }
 
   .physical-attributes-container {
     display: flex;
+    margin-top: 18px;
   }
 
-  .magic-equipment-container{
-    margin-top: 50px;
+  .equipment-container {
+    margin-top: 30px;
   }
 
-  .attributes-equipment-section{
-    padding: 0px 300px;
+  .attributes-equipment-section {
+    width:600px;
+  }
+
+  .items-list-section {
+    width:700px;
+
+  }
+
+  .item-container {
+    margin-top: 3px;
+    border: 2px solid black;
+  }
+
+  .item-info {
+    display: flex;
+    padding: 0px 5px;
+  }
+
+  .item-button {
+    margin-left: 8px;
+    margin-top: 3px;
+    border-radius: 50%;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+  }
+
+  .item-description {
+    padding: 10px 5px;
   }
 </style>
 </html>
